@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My To-Do List </title>
+    <link rel="stylesheet" href="css/style.css">
+
+   <style>
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(217, 242, 217);
+}
+
+.top {
+    background-color: green;
+    width: 500px;
+    text-align: center;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    font-size: xx-large;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    box-shadow: rgb(174, 174, 174) 5px 5px 5px;
+}
+
+.todo-body {
+    width: 490px;
+    /* height: 75px; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;    
+}
+
+.tododiv {
+    box-shadow: rgb(196, 196, 196) 2px 2px 15px;
+    width: auto;
+    min-height: 65px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding-left: 10px;
+    padding-left: 5px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: scroll;
+
+}
+
+
+
+form {
+    width: 490px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+}
+
+.check {
+    min-height: 25px;
+    min-width: 25px;
+}
+
+.ibox {
+    width: 490px;
+    height: 50px;
+    border-style: none;
+    border-bottom-style: solid ;
+    border-bottom-color: green ;
+    background-color: transparent;
+    font-size: xx-large;
+    outline-style: none;
+    text-align: center;
+}
+
+button {
+    /* .parent {
+    margin-top: 15px;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background-color: green;
+    color: white;
+    font-size: xx-large;
+    box-shadow: rgb(196, 196, 196) 2px 2px 15px;
+}
+
+
+    margin-top: 10%;
+} */
+
+
+
+   </style>
+
+
+</head>
+<body>
+
+ <div class="parent">
+    
+    <div class="top">
+        To-Do List
+    </div>
+   
+   {%task%}
+
+    
+    
+    
+<form action="/add-task" method="post">
+       <input type="text" placeholder="Type in a new task!" class="ibox" name="title">
+       <button type="submit">
+           + 
+       </button>
+
+     
+
+       
+
+</form>
+   </form>
+
+   </div>
+</body>
+</html>
